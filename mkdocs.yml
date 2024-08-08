@@ -1,18 +1,20 @@
 site_name: My Docs
 theme:
-  features:
-    - content.code.copy
   name: material
+  features: 
+    - content.code.copy
+    - content.code.select
   palette:
-    primary: deep purple
-    accent: purple
+    primary: blue grey
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.superfences
