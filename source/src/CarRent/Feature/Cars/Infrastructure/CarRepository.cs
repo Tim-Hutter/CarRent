@@ -5,6 +5,7 @@
     using CarRent.Persistence;
 
     using System;
+    using System.Collections.Generic;
 
     public class CarRepository : ICarRepository
     {
@@ -23,6 +24,11 @@
         public Car FindById(Guid id)
         {
             return _context.Set<Car>().Find([id])!;
+        }
+
+        public IReadOnlyList<Car> GetCars()
+        {
+            return _context.Set<Car>().ToList();
         }
 
         public void Remove(Car entity)
