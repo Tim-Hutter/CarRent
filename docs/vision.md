@@ -1,35 +1,5 @@
-# Vision - CarRent24
+# Vision
 
-!!! note 
-    work in progress
+Unsere Vision für das CarRent System ist es, eine innovative und benutzerfreundliche Plattform zu schaffen, die es den Menschen ermöglicht, Fahrzeuge einfach und bequem zu mieten. Wir streben danach, die Art und Weise zu revolutionieren, wie Menschen Mobilität erleben, indem wir eine nahtlose und effiziente Lösung bieten. Unser Ziel ist es, Kunden mit einer breiten Auswahl an hochwertigen Fahrzeugen zu versorgen und ihnen gleichzeitig ein reibungsloses und sicheres Mietprozess zu bieten. Wir möchten die erste Wahl für alle sein, die ein Fahrzeug mieten möchten, sei es für den täglichen Gebrauch, für Geschäftsreisen oder für den Urlaub. Mit unserem CarRent System möchten wir die Mobilität verbessern und den Menschen die Freiheit geben, die Welt zu erkunden.
 
-```cs
-public class Program{
-    public static void Main(string[] args){
-        Console.WriteLine("hi");
-    }
-}
-```
-
-## Autovermietungssystem
-
-Das Autovermietungssystem ermöglicht es Nutzern, Fahrzeuge unterschiedlicher Klassen zu reservieren. Nutzer registrieren sich mit einer E-Mail-Adresse, Vorname, Nachname und Adresse, um Zugang zum System zu erhalten. Nach der Registrierung erhalten sie eine eindeutige Kundennummer zur Identifikation.
-
-## Funktionalitäten
-
-- **Registrierung und Login:** Nutzer können sich registrieren und ein Benutzerkonto erstellen, um auf das System zuzugreifen.
-  
-- **Fahrzeugreservierung:** Nutzer können Fahrzeuge aus verschiedenen Klassen reservieren und die gewünschte Mietdauer angeben. Die Kosten werden automatisch berechnet und eine Reservierungsnummer zugewiesen.
-
-- **Fahrzeugabholung und Rückgabe:** Bei der Abholung wird die Reservierung in einen Mietvertrag umgewandelt. Während der Rückgabe wird ein Rückgabeprotokoll erstellt und eventuelle Schäden am Fahrzeug werden abgerechnet.
-
-## C4-Diagramme
-
-### System Context
-![vision](SystemContext.drawio.svg)
-
-### Container Diagramm
-![vision](Container.drawio.svg)
-
-### Component Diagramm
-![vision](Component.drawio.svg)
+![vision](vision.drawio.svg)

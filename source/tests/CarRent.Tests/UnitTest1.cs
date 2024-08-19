@@ -1,4 +1,4 @@
-namespace CarRent24.Tests;
+namespace CarRent.Tests;
 
 public class UnitTest1
 {

@@ -1,4 +1,4 @@
-namespace CarRent.Domain.Abstractions
+﻿namespace CarRent.Common.Domain
 {
     public abstract class ValueObject : IEquatable<ValueObject?>
     {
@@ -6,36 +6,39 @@ namespace CarRent.Domain.Abstractions
         {
         }
 
-        protected override bool Equals(object? obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as ValueObject);
         }
+
 
         public bool Equals(ValueObject? other)
         {
             if (other is null)
             {
-                return null;
+                return false;
             }
+
             if (GetType() != other.GetType())
             {
-                return null;
+                return false;
             }
-            
-            return EqualityComponents.SequentialEqual(other.EqualityComponents);
+
+            return EqualityComponents.SequenceEqual(other.EqualityComponents);
         }
 
         public override int GetHashCode()
         {
             HashCode hashCode = default;
+
             foreach (var obj in EqualityComponents)
             {
-                hashCode.add(obj);
+                hashCode.Add(obj);
             }
-            return hashCode;
+
+            return hashCode.ToHashCode();
         }
 
         protected abstract IEnumerable<object?> EqualityComponents { get; }
-        //TODO Implement Equals and hashcoade (Ctrl + .)
     }
 }
